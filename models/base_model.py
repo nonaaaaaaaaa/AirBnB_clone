@@ -7,6 +7,7 @@ from models import storage
 
 class BaseModel:
     """Defined a super class that handles objects"""
+    
     def __init__(self, *args, **kwargs):
         """Initializes the object"""
         if kwargs:
