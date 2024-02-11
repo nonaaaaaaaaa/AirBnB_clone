@@ -1,19 +1,4 @@
 #!/usr/bin/python3
-
-import os
-import sys
-import unittest
-import console
-import inspect
-from datetime import datetime
-from time import sleep
-HBNBCommand = console.HBNBCommand
-from models import storage    # noqa: E402
-from models.engine.file_storage import FileStorage    # noqa: E402
-from console import HBNBCommand    # noqa: E402
-from io import StringIO    # noqa: E402
-from unittest.mock import patch    # noqa: E402
-
 """Defines unittests for console.py.
 Unittest classes:
     TestHBNBCommand_prompting
@@ -25,6 +10,19 @@ Unittest classes:
     TestHBNBCommand_destroy
     TestHBNBCommand_update
 """
+import os
+import sys
+import unittest
+import console
+import inspect
+from datetime import datetime
+from time import sleep
+HBNBCommand = console.HBNBCommand
+from models import storage
+from models.engine.file_storage import FileStorage
+from console import HBNBCommand
+from io import StringIO
+from unittest.mock import patch
 
 
 class TestHBNBCommand_prompting(unittest.TestCase):
@@ -630,8 +628,7 @@ class TestHBNBCommand_count(unittest.TestCase):
     def test_count_invalid_class(self):
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("MyModel.count()"))
-            dea = "** class doesn't exist **"
-            self.assertEqual(dea, output.getvalue().strip())
+            self.assertEqual("** class doesn't exist **", output.getvalue().strip())
 
     def test_count_object(self):
         with patch("sys.stdout", new=StringIO()) as output:
