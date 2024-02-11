@@ -36,4 +36,9 @@ The following are some of the features of the ALX Airbnb Console Project:
 
 this about how to make aweb site steps 
 
+Requirements
+To use the ALX Airbnb Console Project, you need to have the following installed on your system:
 
+0. Python 3.6 or later
+1. pip package manager
+2. Git version control system
