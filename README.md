@@ -1,5 +1,7 @@
 Welcome to the AirBnB clone project!
+
 Creation of a command interpreter to manage the hbnb projects
+
 a full web application The program is designed for users who want to manage their Airbnb listings, bookings, and reservations from their terminal.
 
 Description of the command interpreter:
@@ -32,6 +34,6 @@ The following are some of the features of the ALX Airbnb Console Project:
 4. Generate reports and statistics on listings and bookings
 5. Interactive and user-friendly interface
 
-
+this about how to make aweb site steps 
 
 
