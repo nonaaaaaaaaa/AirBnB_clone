@@ -21,3 +21,14 @@ How to use it
 It can work in two different modes:
 
 Interactive and Non-interactive.
+
+
+The following are some of the features of the ALX Airbnb Console Project:
+
+0. User authentication and authorization
+1. Create, read, update, and delete Airbnb listings
+2. Search for listings by location, price, availability, and more
+3. View and manage bookings and reservations
+4. Generate reports and statistics on listings and bookings
+5. Interactive and user-friendly interface
+
