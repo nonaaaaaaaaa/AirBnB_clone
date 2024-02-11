@@ -631,7 +631,7 @@ class TestHBNBCommand_count(unittest.TestCase):
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("MyModel.count()"))
             self.assertEqual("** class doesn't exist **",
-                            output.getvalue().strip())
+            output.getvalue().strip())
 
     def test_count_object(self):
         with patch("sys.stdout", new=StringIO()) as output:
