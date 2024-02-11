@@ -42,3 +42,14 @@ To use the ALX Airbnb Console Project, you need to have the following installed 
 0. Python 3.6 or later
 1. pip package manager
 2. Git version control system
+
+The created objects
+The list of the objects (instances) that can be created are as follows:
+
+BaseModel
+User
+City
+Amenity
+State
+Review
+Place
